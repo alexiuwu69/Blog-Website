@@ -1,0 +1,38 @@
+.login-root {
+  margin-top: 100px;
+  display: flex;
+  height: 110px;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+p {
+    display: inline;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.input-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 235px;
+}
+
+.input-field {
+    height: 25px;
+}
+
+/* classes for trouble shooting*/
+
+/*.red {
+  background-color: palevioletred;
+  width: 200px;
+  height: 32px;
+}
+
+.blue {
+  background-color: cadetblue;
+  width: 200px;
+  height: 32px;
+}*/
