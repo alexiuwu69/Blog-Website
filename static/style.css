@@ -1,7 +1,6 @@
 .login-root {
   margin-top: 100px;
   display: flex;
-  /*height: 110px;*/
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
@@ -10,34 +9,64 @@
 p {
   display: inline;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  margin: 12px 0px 12px 0px;
 }
 
 .input-box {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  width: 270px;
+  width: 323px;
 }
 
 .input-field {
-  font-size: 16px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  height: 25px;
   border-radius: 5px;
   border-style: solid;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  height: 25px;
+
+  transition: border-color 0.2s;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: rgb(26, 82, 214);
+
+  transition: border-color 0.2s;
+}
+
+.input-field:active {
+  border-color: rgb(12, 46, 125);
+  transition: border-color 0.2s;
 }
 
 .submit-btn {
-  border-radius: 20px;
+  background-color: rgb(26, 82, 214);
   border: none;
+  border-radius: 20px;
+  color: white;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
   padding: 8px 10px 8px 10px;
+  margin-top: 7px;
+  transition: background-color 0.2s;
+}
+
+.submit-btn:hover {
+  cursor: pointer;
+}
+
+.submit-btn:active {
+  background-color: rgb(12, 46, 125);
+
+  transition: background-color 0.2s;
 }
 
 .title {
   font-size: 30px;
-  margin: 0 0 0 0;
   font-weight: bold;
+  margin: 0 0 0 0;
 }
