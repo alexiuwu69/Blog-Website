@@ -6,19 +6,23 @@
       type="text/css"
       href="{{ url_for('static', filename='style.css') }}"
     />
+
   </head>
   <body>
     <div class="login-root">
-      <p>Login</p>
+      <p class="title">Login</p>
       <div class="input-box">
         <p>Username</p>
-        <input class="input-field">
+        <input class="input-field" />
       </div>
 
       <div class="input-box">
         <p>Password</p>
-        <input class="input-field">
+        <input class="input-field" />
       </div>
+
+      <button class="submit-btn">Submit</button>
+
     </div>
   </body>
 </html>
