@@ -1,3 +1,7 @@
+body {
+  margin: 0 0 0 0;
+}
+
 .login-root {
   margin-top: 100px;
   display: flex;
@@ -13,6 +17,13 @@ p {
   margin: 12px 0px 12px 0px;
 }
 
+a {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+}
+
 .input-box {
   align-items: center;
   display: flex;
@@ -23,6 +34,7 @@ p {
 .input-field {
   border-radius: 5px;
   border-style: solid;
+  border-color: rgb(175, 175, 175);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 20px;
   height: 25px;
@@ -30,15 +42,15 @@ p {
   transition: border-color 0.2s;
 }
 
+.input-field:hover {
+  border-color: rgb(26, 82, 214);
+  transition: border-color 0.2s;
+}
+
 .input-field:focus {
   outline: none;
   border-color: rgb(26, 82, 214);
 
-  transition: border-color 0.2s;
-}
-
-.input-field:active {
-  border-color: rgb(12, 46, 125);
   transition: border-color 0.2s;
 }
 
@@ -61,12 +73,60 @@ p {
 
 .submit-btn:active {
   background-color: rgb(12, 46, 125);
-
   transition: background-color 0.2s;
+}
+
+.sign-in-btn {
+  background-color: rgb(230, 230, 230);
+  color: rgb(140, 140, 140);
+}
+
+.sign-in-btn:active {
+  background-color: rgb(200, 200, 200);
 }
 
 .title {
   font-size: 30px;
   font-weight: bold;
   margin: 0 0 0 0;
+}
+
+.navbar {
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  list-style-type: none;
+  margin: 0 0 0 0;
+  padding: 12px 0 12px 0;
+  align-items: center;
+  box-shadow: 0 0 5px rgb(100, 100, 100);
+}
+
+li {
+  display: inline;
+}
+
+.navbar-div {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.navbar-div-right {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex: 1;
+  justify-content: space-evenly;
+  margin: 0 30% 0 0;
+}
+
+.navbar-div-left {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex: 1;
+  justify-content: space-evenly;
+  margin: 0 0 0 30%;
 }
