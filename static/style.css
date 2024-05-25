@@ -101,32 +101,32 @@ a {
   padding: 12px 0 12px 0;
   align-items: center;
   box-shadow: 0 0 5px rgb(100, 100, 100);
+  justify-content: space-evenly;
 }
 
 li {
   display: inline;
 }
 
-.navbar-div {
-  display: flex;
-  justify-content: center;
-  height: 100%;
-}
-
 .navbar-div-right {
   display: flex;
   align-items: center;
-  width: 100%;
   flex: 1;
-  justify-content: space-evenly;
-  margin: 0 30% 0 0;
+  justify-content: flex-end;
+  align-items: baseline;
+  margin: 0 0 0 0;
 }
 
 .navbar-div-left {
   display: flex;
   align-items: center;
-  width: 100%;
   flex: 1;
-  justify-content: space-evenly;
-  margin: 0 0 0 30%;
+  justify-content: flex-start;
+  margin: 0 0 0 0;
+}
+
+.navbar-div-center {
+  display: flex;
+  justify-content: center;
+  flex: 1;
 }
