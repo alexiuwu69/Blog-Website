@@ -130,3 +130,33 @@ li {
   justify-content: center;
   flex: 1;
 }
+
+.main-display {
+  display: flex;
+  margin: 64px 0 0 0;
+}
+
+.user {
+  display: flex;
+  top: 100px;
+  flex: 1;
+  height: 100%;
+}
+
+.position-fixer {
+  margin: 10px 0 0 10px;
+  position: fixed;
+  display: flex;
+  align-items: flex-end;
+}
+
+.user-comment {
+  height: 100px;
+  width: 300px;
+  resize: none;
+  overflow: hidden;
+}
+
+.comments {
+  flex: 2;
+}
